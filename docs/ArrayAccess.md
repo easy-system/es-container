@@ -10,7 +10,7 @@ use ArrayAccess;
 use Es\Container\AbstractContainer;
 use Es\Container\ArrayAccess\ArrayAccessTrait;
 
-class Examle extends AbstractContainer implements ArrayAccess
+class Example extends AbstractContainer implements ArrayAccess
 {
     use ArrayAccessTrait;
 }
