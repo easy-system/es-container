@@ -10,7 +10,7 @@ use Countable;
 use Es\Container\AbstractContainer;
 use Es\Container\Countable\CountableTrait;
 
-class Examle extends AbstractContainer implements Countable
+class Example extends AbstractContainer implements Countable
 {
     use CountableTrait;
 }
