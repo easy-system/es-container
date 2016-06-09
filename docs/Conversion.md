@@ -14,7 +14,7 @@ use Es\Container\AbstractContainer;
 use Es\Container\Conversion\ConversionInterface;
 use Es\Container\Conversion\ConversionTrait;
 
-class Examle extends AbstractContainer implements ConversionInterface
+class Example extends AbstractContainer implements ConversionInterface
 {
     use ConversionTrait;
 }
