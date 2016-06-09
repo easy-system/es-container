@@ -1,0 +1,23 @@
+{
+    "name": "easy-system/es-container",
+    "description": "Easy System Container",
+    "authors": [
+        {
+            "name": "Damon Smith",
+            "email": "damon.easy.system@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^5.5 || ^7.0",
+        "easy-system/es-component": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Es\\Container\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { "Es\\Container\\Test\\": "test/" }
+    },
+    "minimum-stability": "dev"
+}
