@@ -32,7 +32,7 @@ interface PropertyInterface
     public function __get($name);
 
     /**
-     * Wheter the dynamic properties exists.
+     * Whether the dynamic properties exists.
      *
      * @param string $name The property name
      *
