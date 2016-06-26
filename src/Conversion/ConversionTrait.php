@@ -33,7 +33,7 @@ trait ConversionTrait
      */
     public function fromArray(array $source = [])
     {
-        $this->container = $source;
+        $this->container = array_merge($this->container, $source);
 
         return $this;
     }

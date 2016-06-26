@@ -30,15 +30,25 @@ class ConversionTraitTest extends \PHPUnit_Framework_TestCase
 
     public function testFromArray()
     {
-        $array = [
+        $firstArray = [
             'foo' => 'foo',
             'bar' => 'bar',
             'baz' => 'baz',
         ];
         $config = new Configuration();
-        $config->fromArray($array);
+        $config->fromArray($firstArray);
+
         $reflection = new ReflectionProperty($config, 'container');
         $reflection->setAccessible(true);
-        $this->assertEquals($array, $reflection->getValue($config));
+        $this->assertSame($firstArray, $reflection->getValue($config));
+
+        $secondArray = [
+            'bar' => 'bat',
+            'con' => 'com',
+        ];
+        $config->fromArray($secondArray);
+
+        $expected = array_merge($firstArray, $secondArray);
+        $this->assertSame($expected, $reflection->getValue($config));
     }
 }
