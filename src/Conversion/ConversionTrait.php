@@ -29,7 +29,7 @@ trait ConversionTrait
      *
      * @param array $source The array to import
      *
-     * @return ArrayConversionInterface
+     * @return self
      */
     public function fromArray(array $source = [])
     {
