@@ -26,7 +26,8 @@ class AbstractContainerTest extends \PHPUnit_Framework_TestCase
         $container['foo'] = 'bar';
         $this->assertTrue(isset($container['foo']));
 
-        $container->reset();
+        $return = $container->reset();
+        $this->assertSame($return, $container);
         $this->assertFalse(isset($container['foo']));
     }
 

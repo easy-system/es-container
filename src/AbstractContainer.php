@@ -23,10 +23,14 @@ abstract class AbstractContainer
 
     /**
      * Resets the container.
+     *
+     * @return self
      */
     public function reset()
     {
         $this->container = [];
+
+        return $this;
     }
 
     /**
